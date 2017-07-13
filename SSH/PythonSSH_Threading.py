@@ -14,7 +14,7 @@ def ssh_conn(ip):
         # Use paramiko ssh client
         ssh = paramiko.SSHClient()
         ssh.set_missing_host_key_policy(paramiko.AutoAddPolicy())
-        ssh.connect(ip, port=22, username='cisco', password='budakbaong18', look_for_keys=False, timeout=None)
+        ssh.connect(ip, port=22, username='admin', password='password', look_for_keys=False, timeout=None)
 
         # Invoke the shell for interactive terminal
         connection = ssh.invoke_shell()
